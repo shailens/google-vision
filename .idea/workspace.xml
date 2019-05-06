@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6f1de4b-e03a-4371-aca1-5adbee3f8863" name="Default Changelist" comment="" />
+    <list default="true" id="a6f1de4b-e03a-4371-aca1-5adbee3f8863" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,14 +58,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/service/DetectTextFromImageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="8" selection-end-line="30" selection-end-column="71" />
+            <state relative-caret-position="296">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -120,18 +131,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/model/EntityLite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/google/api/grpc/proto-google-cloud-vision-v1/1.48.0/proto-google-cloud-vision-v1-1.48.0.jar!/com/google/cloud/vision/v1/Feature.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="11506">
@@ -155,6 +154,9 @@
       <find>LINE</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -166,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/main/java/RunApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/model/Row.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/model/Token.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/model/VertexLite.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/model/EntityLite.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/service/EntityLiteComparatorByX.java" />
@@ -182,6 +183,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/utils/ImageUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/RunApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gcp/service/DetectTextFromImageService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -198,6 +200,7 @@
     <option name="width" value="3150" />
     <option name="height" value="1980" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -266,7 +269,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557167317469" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557167530460" />
     <property name="last_opened_file_path" value="C:/opencv/build/java/x64/opencv_java410.dll" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -395,12 +398,12 @@
       <workItem from="1555149873452" duration="18806000" />
       <workItem from="1555960178727" duration="98000" />
       <workItem from="1556702580523" duration="2440000" />
-      <workItem from="1557153560062" duration="9074000" />
+      <workItem from="1557153560062" duration="9320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88196000" />
+    <option name="totallyTimeSpent" value="88442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1719" height="932" extended-state="6" />
@@ -558,13 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -822,11 +818,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gcp/service/DetectTextFromImageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="8" selection-end-line="30" selection-end-column="71" />
+        <state relative-caret-position="296">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
         </state>
       </provider>
     </entry>
