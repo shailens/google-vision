@@ -11,7 +11,7 @@ import static org.opencv.imgproc.Imgproc.THRESH_BINARY;
  * @author Shailendra
  */
 public class ImageUtilities {
-    private static final String[] IMAGE_FILE_EXTENSION = {".jpg",".jpeg",".tiff",".png"};
+    private static final String[] IMAGE_FILE_EXTENSIONS= {".jpg",".jpeg",".tiff",".png"};
 
 
     public static void init(){
@@ -28,7 +28,7 @@ public class ImageUtilities {
         Mat destination = new Mat();
         Imgproc.cvtColor(source, destination, Imgproc.COLOR_RGB2GRAY);
         long filePrefix = System.currentTimeMillis();
-        String destinationFilePath = "C:\\workspace\\documents\\gray-images\\gray_"+filePrefix+IMAGE_FILE_EXTENSION[0];
+        String destinationFilePath = "C:\\workspace\\documents\\gray-images\\gray_"+filePrefix+IMAGE_FILE_EXTENSIONS[0];
         Imgcodecs.imwrite(destinationFilePath, destination);
         return destinationFilePath;
     }
@@ -40,7 +40,7 @@ public class ImageUtilities {
         Core.bitwise_not(gray, gray);
         Imgproc.adaptiveThreshold(gray, bw, 255, Imgproc.ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY, 15, -2);
         long filePrefix = System.currentTimeMillis();
-        String destinationFilePath = "C:\\workspace\\documents\\binary-images\\binary_" + filePrefix + IMAGE_FILE_EXTENSION[0];
+        String destinationFilePath = "C:\\workspace\\documents\\binary-images\\binary_" + filePrefix + IMAGE_FILE_EXTENSIONS[0];
         Imgcodecs.imwrite(destinationFilePath,bw);
         return destinationFilePath;
     }

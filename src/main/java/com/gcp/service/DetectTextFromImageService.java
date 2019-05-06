@@ -1,6 +1,7 @@
 package com.gcp.service;
 
 import com.gcp.api.GoogleVisionAPI;
+import com.gcp.model.BoundingMaxMin;
 import com.gcp.model.EntityLite;
 import com.gcp.model.VertexLite;
 import com.gcp.utils.Utilities;
@@ -10,7 +11,6 @@ import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -26,7 +26,7 @@ public class DetectTextFromImageService {
         LOGGER.info("Parse Annotation Entity to EntityLite.");
         List<EntityLite> entityLites =  parseTextFromGCPResponse(list);
         LOGGER.info("Sort entities by x-coordinate");
-        Collections.sort(entityLites, new EntityLiteComparatorByX());
+       // Collections.sort(entityLites, new EntityLiteComparatorByX());
         /*LOGGER.info("Sort entities by x-coordinate");
         Collections.sort(entityLites, new EntityLiteComparatorByY());*/
         LOGGER.info("Write JSON to file.");
@@ -37,6 +37,29 @@ public class DetectTextFromImageService {
         }
 
         Utilities.writeTextToFile(Utilities.FILE_PATH,descriptions);
+        //structureData(entityLites);
+
+    }
+
+    public void structureData(List<EntityLite> entityLites){
+        EntityLite el = entityLites.get(0);
+        BoundingMaxMin bmm = new BoundingMaxMin(el.getVertexList().get(0).getX(),el.getVertexList().get(1).getX(),
+                el.getVertexList().get(0).getY(),el.getVertexList().get(3).getY());
+
+        for(int i=1;i<entityLites.size();i++){
+            EntityLite entityLite = entityLites.get(i);
+            int[] vertices = {entityLite.getVertexList().get(0).getX(),
+                    entityLite.getVertexList().get(1).getX(),
+                    entityLite.getVertexList().get(0).getY(),
+                    entityLite.getVertexList().get(3).getY()};
+
+            System.out.print(el.getDescription());
+
+           /* if(vertices[1] + 5 > bmm.getMaxX()){
+                System.out.println("\n");
+            }*/
+        }
+
 
     }
 
