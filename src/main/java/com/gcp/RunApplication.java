@@ -6,7 +6,7 @@ import com.gcp.utils.ImageUtilities;
 public class RunApplication {
 
     public static void main(String[] args) throws Exception{
-        String filePath = "C:\\workspace\\documents\\IndusInd-PNB\\test34.jpg";
+        String filePath = "C:\\workspace\\documents\\";
         String grayImagePath = ImageUtilities.convertImageToBinaryImage(filePath);
         new DetectTextFromImageService().detectText("fullText",grayImagePath);
     }
