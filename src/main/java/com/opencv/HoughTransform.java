@@ -59,6 +59,6 @@ public class HoughTransform {
 
     public static void main(String [] args){
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-        new HoughTransform().run("C:\\workspace\\documents\\IndusInd-PNB\\test34.jpg");
+        new HoughTransform().run("C:\\workspace\\documents\\test34.jpg");
     }
 }
